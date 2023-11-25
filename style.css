@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #add8e6; /* Light Blue */
+    color: #fff;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    color: #004080;
+}
+
+.form-group label {
+    color: #004080;
+}
+
+.form-control {
+    border-color: #004080;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 64, 128, 0.1);
+}
+
+.card-title {
+    color: #004080;
+}
+
+.card-text {
+    color: #555;
+}

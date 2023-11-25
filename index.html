@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Portfolio</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5" id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Hello, I am Sohaib Ashraf, currently enrolled in Fast-NU. I love cricket, and my favorite player is Babar Azam! I am an al-rounder!</p>
+</div>
+
+<div class="container mt-5" id="education">
+    <h2>Education</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Course</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Calculus</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Further Maths</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Accounts</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Chemistry</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>DevOps</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Recommendation System</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>Computer Networks</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>Ethical Hacking</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td>Databases</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Project Cards Section (similar to the previous code) -->
+<div class="container mt-5" id="projects">
+    <h2>My Projects</h2>
+    <!-- Filter Input -->
+    <div class="form-group">
+        <label for="techFilter">Filter by Technology:</label>
+        <input type="text" class="form-control" id="techFilter" placeholder="Type technology name">
+    </div>
+
+    <!-- Project Cards -->
+    <div class="row" id="projectList">
+        <!-- Sample project card, you can duplicate and modify as needed -->
+        <div class="col-md-4 project-card" data-technology="nodejs">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CricFusion made using Node.js</h5>
+                    <p class="card-text">A cricket statistics analysis application.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards here -->
+
+        <div class="col-md-4 project-card" data-technology="Python">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Recommendation System</h5>
+                    <p class="card-text">An Ann assisted collaborative filtering program that suggests unwatched movies based on user watch history.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
